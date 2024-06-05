@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="Styles.css">
+<script src="main.js"></script>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC Website Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/70766f24e6.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Assets/Logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hello I'm <span style="color: #3970FF;">Kendrix</span></h1>
+          <p>Building Digital Bridges.</p>
+        </div>
+      </div>
+    </div>
+
+<!--- About Me --->
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="Assets/About Me.png">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>Welcome to my Website! I'm Kendrix, a dedicated web developer with three years of experience crafting dynamic digital solutions.
+                Skilled in HTML, CSS, JavaScript, and frameworks like React and Angular, I'm passionate about turning creative ideas into functional and
+                engaging web experiences.<br><br>Driven by a love for problem-solving and innovation, I thrive on pushing the boundaries of web development to
+                exceed client expectations. Collaborative by nature, I value open communication and teamwork, ensuring that every project reflects both
+                technical excellence and user-centric design. Let's work together to bring your digital vision to life</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Web/Wordpress Developer</span><br>Building Website</li>
+                  <li><span>Web Analytics</span><br>User Behavior, Heatmap and Web Traffic</li>
+                  <li><span>UI/UX Figma</span><br>Web Design and Structure using Figma</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>June 2023 - Current</span><br>Web Developer at Outsource Access</li>
+                  <li><span>October 2021 - June 2023</span><br>Web Developer at Microgenesis Business System</li>
+                  <li><span>January 2021 - July 2021</span><br>Graphic Designer at Delibber Express</li>
+                  <li><span>2019 - 2020</span><br>Computer Teacher at Maranatha Christian Academy</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2024</span><br>Full Stack Development at Udemy</li>
+                  <li><span>2015 - 2019</span><br>BS Computer Science at Laguna College of Business and Arts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!--- Services --->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web/Wordpress Development</h2>
+            <p>Crafting tailored web solutions for businesses.
+               From responsive design to e-commerce, we deliver
+               engaging online experiences. Let us bring your
+               vision to life with innovative web development services.</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-figma"></i>
+            <h2>UI/UX Design (Figma)</h2>
+            <p>Crafting intuitive UI/UX designs tailored to your needs.
+              From user research to mobile optimization, specialize
+              in creating captivating user experiences. Let us elevate
+              your brand with innovative design solutions.</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Web Analytics</h2>
+            <p>Transforming data into actionable insights for online success.
+               Our web analytics services drive growth by optimizing user
+               behavior and conversions. Let's elevate your strategy with
+               valuable insights.</p>
+            <a href="#">Learn More</a>
+          </div>
+      </div>
+    </div>
+
+<!--- Portfolio --->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Assets/work1.png">
+            <div class="layer">
+              <h3>Outsource Access</h3>
+              <p></p>
+              <a href="https://outsourceaccess.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Assets/work2.png">
+            <div class="layer">
+              <h3>Outsource Access Careers</h3>
+              <p></p>
+              <a href="https://outsourceaccesscareers.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Assets/work3.png">
+            <div class="layer">
+              <h3>Microgenesis</h3>
+              <p></p>
+              <a href="https://www.mgenesis.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Assets/work4.png">
+            <div class="layer">
+              <h3>PMCC 4TH Watch</h3>
+              <p></p>
+              <a href="https://pmcc4thwatch.org/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Assets/work5.png">
+            <div class="layer">
+              <h3>Livewise Furniture</h3>
+              <p></p>
+              <a href="https://livewisefurniture.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Assets/work6.png">
+            <div class="layer">
+              <h3>Frolic PH</h3>
+              <p></p>
+              <a href="http://www.frolic.ph/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--- Contact --->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i> cayabyab.kendrix@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> (+63)920-9423-394</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/kendrixcayabyab" target="blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/kendrix-cayabyab-3270871a8/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/cayabyab.kendrix/" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+          <a href="Assets/Cayabyab-Kendrix.pdf" download class="btn btn2" target="blank">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2024 - Kendrix Cayabyab <i class="fa-solid fa-code"></i> Web Developer - All Rights Reserved.</p>
+  </div>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyy5zXcTGukAmSiETKpDn6CnadylIvLdFmCtP1bRt06m79MP48caBRlFuqtcRXPTqvg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully. Thank You"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+
+  </body>
+
+</html>
